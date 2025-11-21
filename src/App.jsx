@@ -4,6 +4,7 @@ import ModelChibi from './components/ModelChibi';
 import { useInView } from 'react-intersection-observer';
 import LogoKampus from '/assets/logo_college.png';
 
+
 // --- 1. KOMPONEN ANIMASI REUSABLE ---
 // Ini bikin kita gak perlu nulis useInView berulang-ulang di setiap section
 const FadeIn = ({ children, delay = 0, className = "" }) => {
@@ -60,8 +61,13 @@ function App() {
             enthusiast dengan fokus pada pengembangan front-end dan back-end.
           </p>
           <div className="flex items-center sm:gap-4 gap-3 flex-wrap">
-            <a href="#" className="bg-violet-700 px-6 py-3 rounded-xl hover:bg-violet-600 transition-colors flex items-center gap-2 font-medium">
-              Download CV <i className="ri-download-line"></i>
+            
+            {/* --- 2. Panggil Variabel Import Tadi --- */}
+           <a 
+              href="https://drive.google.com/uc?export=download&id=17YgRycLJfL7UmRs02W40l9ZriW96u2r-" 
+              className="bg-violet-700 px-6 py-3 rounded-xl hover:bg-violet-600 transition-colors flex items-center gap-2 font-medium text-white shadow-lg shadow-violet-700/20"
+            >
+              Download CV <i className="ri-download-cloud-2-line"></i>
             </a>
             <a href="#proyek" className="bg-zinc-800 px-6 py-3 rounded-xl hover:bg-zinc-700 transition-colors border border-zinc-700 flex items-center gap-2">
               Lihat Proyek <i className="ri-arrow-down-line"></i>
@@ -93,7 +99,7 @@ function App() {
         <div className="w-full h-full bg-white p-2 pb-8 rounded-lg shadow-xl">
            {/* Ganti src ini dengan foto kamu yang lain */}
           <img 
-            src="https://via.placeholder.com/300" 
+            src={DataImage.Riski2}
             alt="Foto Riski 1" 
             className="w-full h-full object-cover rounded bg-zinc-200"
           />
@@ -160,7 +166,7 @@ function App() {
           </div>
           <div className="w-px h-12 bg-zinc-800"></div> {/* Garis Pemisah */}
           <div>
-            <h3 className="text-4xl font-bold text-white mb-1">45+</h3>
+            <h3 className="text-4xl font-bold text-white mb-1">8+</h3>
             <p className="text-sm text-zinc-500">Proyek Tuntas</p>
           </div>
            <div className="w-px h-12 bg-zinc-800"></div> 

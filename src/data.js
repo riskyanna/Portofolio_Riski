@@ -1,9 +1,10 @@
 import HeroImage from "/assets/hero-img.webp";
 import AboutImage from "/assets/about-img.jpg";
-
+import Riski2 from "/assets/Riski2.jpg";
 const Image = {
   HeroImage,
   AboutImage,
+  Riski2,
 };
 
 export default Image;
