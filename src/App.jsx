@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import DataImage from "./data";
 import { listTools, listProyek, listSertifikat } from "./data";
 import ModelChibi from './components/ModelChibi';
@@ -27,6 +28,7 @@ const FadeIn = ({ children, delay = 0, className = "" }) => {
 };
 
 function App() {
+  const [showCvMenu, setShowCvMenu] = useState(false);
   // --- 2. DATA SOSIAL MEDIA (Refactor) ---
   // Gampang kalau mau nambah sosmed, tinggal tambah object di sini
   const socialLinks = [
@@ -61,10 +63,8 @@ function App() {
             enthusiast dengan fokus pada pengembangan front-end dan back-end.
           </p>
           <div className="flex items-center sm:gap-4 gap-3 flex-wrap">
-            
-            {/* --- 2. Panggil Variabel Import Tadi --- */}
            <a 
-              href="https://drive.google.com/uc?export=download&id=17YgRycLJfL7UmRs02W40l9ZriW96u2r-" 
+              href="https://drive.google.com/uc?export=download&id=1_oDgrXEPUoUvgq1eAqw8YPFtP9l-Hndp" 
               className="bg-violet-700 px-6 py-3 rounded-xl hover:bg-violet-600 transition-colors flex items-center gap-2 font-medium text-white shadow-lg shadow-violet-700/20"
             >
               Download CV <i className="ri-download-cloud-2-line"></i>
